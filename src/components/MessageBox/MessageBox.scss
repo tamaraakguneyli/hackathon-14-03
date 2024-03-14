@@ -1,0 +1,45 @@
+@use "../../Styles/Partials/variables" as *;
+@use "../../Styles/Partials/resets";
+@use "../../Styles/Partials/typography";
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    background-color: $primary;
+    border: 2px solid $primary;
+    margin-bottom: 2rem;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 5px;
+
+    &::placeholder {
+      color: $background;
+      font-family: "AvenirNextLTPro", Arial, sans-serif;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    background-color: $secondary;
+    border-radius: 5px;
+    border: 2px solid $accent;
+    color: $primary;
+    height: 3rem;
+    width: 10rem;
+    font-family: "AvenirNextLTPro", Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+}

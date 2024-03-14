@@ -1,0 +1,20 @@
+@use "../../Styles/Partials/variables" as *;
+@use "../../Styles/Partials/resets";
+@use "../../Styles/Partials/typography";
+
+.header {
+  &__div {
+    display: flex;
+    justify-content: center;
+  }
+  &__heading {
+    color: $accent;
+    font-size: 3rem;
+    margin: 0;
+  }
+  &__img {
+    width: 20%;
+    height: 20%;
+    margin: 0;
+  }
+}
