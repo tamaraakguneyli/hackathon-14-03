@@ -4,7 +4,7 @@ import Button from "./components/Button/Button";
 import Header from "./components/Header/Header";
 import "./App.scss";
 
-const api_Key = "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";
+const api_Key = ""; //look at env file
 function App() {
   const [content, setContent] = useState(null);
   const [originalPrompt, setOriginalPrompt] = useState(null);
